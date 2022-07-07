@@ -2,7 +2,7 @@ terraform {
 
   backend "s3" {
     profile = "poc"
-    region  = "eu-west-1"
+    region  = "us-east-2"
     bucket          = "containers-terraform-state-storage"
     dynamodb_table  = "terraform-state-lock"
     key     = "service/ansible/terraform.tfstate"
@@ -12,6 +12,6 @@ terraform {
 
 provider "aws" {
   profile = "poc"
-  //region  = "eu-west-1"
+  //region  = "us-east-2"
   region  = "${var.aws_region}"
 }
