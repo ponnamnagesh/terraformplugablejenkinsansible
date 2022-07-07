@@ -9,7 +9,7 @@ pipeline {
 
               choice(
                   name: 'aws_region',
-                  choices: "eu-west-1\neu-west-2\nus-east-1",
+                  choices: "us-east-2\us-east-1\nus-west-1",
                   description: 'Name the region where you would like to deploy. This is to demonstrate the ability to set backend configuration during runtime')
 
           string(
